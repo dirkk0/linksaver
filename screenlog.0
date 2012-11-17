@@ -1,0 +1,120 @@
+  File "RESTserver.py", line 15
+    f.close()
+    ^
+IndentationError: unexpected indent
+ * Running on http://127.0.0.1:5000/
+: ^C * Running on http://127.0.0.1:5000/
+127.0.0.1 - - [17/Nov/2012 12:49:50] "POST /messages HTTP/1.1" 500 -
+^C * Running on http://127.0.0.1:5000/
+127.0.0.1 - - [17/Nov/2012 12:50:43] "POST /message HTTP/1.1" 404 -
+127.0.0.1 - - [17/Nov/2012 12:51:19] "POST /messages HTTP/1.1" 500 -
+^C  File "RESTserver.py", line 8
+    elif request.headers['Content-Type'] == 'application/json':
+       ^
+SyntaxError: invalid syntax
+ * Running on http://127.0.0.1:5000/
+127.0.0.1 - - [17/Nov/2012 12:52:30] "POST /messages HTTP/1.1" 500 -
+^C * Running on http://127.0.0.1:5000/
+1111
+127.0.0.1 - - [17/Nov/2012 12:53:39] "POST /messages HTTP/1.1" 500 -
+^C * Running on http://127.0.0.1:5000/
+1111
+127.0.0.1 - - [17/Nov/2012 12:56:22] "POST /messages HTTP/1.1" 500 -
+^C * Running on http://127.0.0.1:5000/
+1111
+127.0.0.1 - - [17/Nov/2012 12:56:55] "POST /messages HTTP/1.1" 500 -
+^C * Running on http://127.0.0.1:5000/
+1111
+127.0.0.1 - - [17/Nov/2012 12:57:16] "POST /messages HTTP/1.1" 500 -
+^C * Running on http://127.0.0.1:5000/
+1111
+application/json
+2222
+127.0.0.1 - - [17/Nov/2012 12:57:54] "POST /messages HTTP/1.1" 200 -
+^C * Running on http://127.0.0.1:5000/
+127.0.0.1 - - [17/Nov/2012 13:06:59] "POST /messages HTTP/1.1" 500 -
+^C * Running on http://127.0.0.1:5000/
+(u'222', u'http://pixelpark.com', u'2012-11-17 13:04:59.871802')
+(u'222', u'http://pixelpark.com', u'2012-11-17 13:05:35.337209')
+(u'222', u'http://pixelpark.com', u'2012-11-17 13:05:36.639245')
+(u'333', u'http://google.com', u'2012-11-17 13:07:23.326241')
+127.0.0.1 - - [17/Nov/2012 13:07:23] "POST /messages HTTP/1.1" 200 -
+(u'222', u'http://pixelpark.com', u'2012-11-17 13:04:59.871802')
+(u'222', u'http://pixelpark.com', u'2012-11-17 13:05:35.337209')
+(u'222', u'http://pixelpark.com', u'2012-11-17 13:05:36.639245')
+(u'333', u'http://google.com', u'2012-11-17 13:07:23.326241')
+(u'222', u'http://pixelpark.com', u'2012-11-17 13:07:30.849533')
+(u'333', u'http://google.com', u'2012-11-17 13:08:26.716460')
+127.0.0.1 - - [17/Nov/2012 13:08:26] "POST /messages HTTP/1.1" 200 -
+^C * Running on http://127.0.0.1:5000/
+(u'222', u'http://pixelpark.com', u'2012-11-17 13:04:59.871802')
+(u'222', u'http://pixelpark.com', u'2012-11-17 13:05:35.337209')
+(u'222', u'http://pixelpark.com', u'2012-11-17 13:05:36.639245')
+(u'333', u'http://google.com', u'2012-11-17 13:07:23.326241')
+(u'222', u'http://pixelpark.com', u'2012-11-17 13:07:30.849533')
+(u'333', u'http://google.com', u'2012-11-17 13:08:26.716460')
+(u'Hello Data', u'link', u'2012-11-17 13:09:47.829346')
+127.0.0.1 - - [17/Nov/2012 13:09:47] "POST /messages HTTP/1.1" 200 -
+ * Running on http://127.0.0.1:5000/
+Traceback (most recent call last):
+  File "RESTserver.py", line 18, in <module>
+    app.run()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 739, in run
+    run_simple(host, port, self, **options)
+  File "/Library/Python/2.7/site-packages/werkzeug/serving.py", line 617, in run_simple
+    inner()
+  File "/Library/Python/2.7/site-packages/werkzeug/serving.py", line 599, in inner
+    passthrough_errors, ssl_context).serve_forever()
+  File "/Library/Python/2.7/site-packages/werkzeug/serving.py", line 408, in make_server
+    passthrough_errors, ssl_context)
+  File "/Library/Python/2.7/site-packages/werkzeug/serving.py", line 334, in __init__
+    HTTPServer.__init__(self, (host, int(port)), handler)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 408, in __init__
+    self.server_bind()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/BaseHTTPServer.py", line 108, in server_bind
+    SocketServer.TCPServer.server_bind(self)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 419, in server_bind
+    self.socket.bind(self.server_address)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 48] Address already in use
+^C * Running on http://127.0.0.1:5000/
+127.0.0.1 - - [17/Nov/2012 13:20:22] "POST /messages HTTP/1.1" 500 -
+^C * Running on http://127.0.0.1:5000/
+127.0.0.1 - - [17/Nov/2012 13:20:48] "POST /messages HTTP/1.1" 500 -
+^C * Running on http://127.0.0.1:5000/
+127.0.0.1 - - [17/Nov/2012 13:21:07] "POST /messages HTTP/1.1" 500 -
+^C * Running on http://127.0.0.1:5000/
+(u'222', u'http://pixelpark.com', u'2012-11-17 13:04:59.871802')
+(u'222', u'http://pixelpark.com', u'2012-11-17 13:05:35.337209')
+(u'222', u'http://pixelpark.com', u'2012-11-17 13:05:36.639245')
+(u'333', u'http://google.com', u'2012-11-17 13:07:23.326241')
+(u'222', u'http://pixelpark.com', u'2012-11-17 13:07:30.849533')
+(u'333', u'http://google.com', u'2012-11-17 13:08:26.716460')
+(u'Hello Data', u'link', u'2012-11-17 13:09:47.829346')
+(u'222', u'http://pixelpark.com', u'2012-11-17 13:09:53.423165')
+(u'Hello Data', u'link', u'2012-11-17 13:21:28.252299')
+127.0.0.1 - - [17/Nov/2012 13:21:28] "POST /messages HTTP/1.1" 200 -
+^C * Running on http://127.0.0.1:5000/
+127.0.0.1 - - [17/Nov/2012 13:22:09] "POST /messages HTTP/1.1" 500 -
+^C * Running on http://127.0.0.1:5000/
+(u'222', u'http://pixelpark.com', u'2012-11-17 13:04:59.871802')
+(u'222', u'http://pixelpark.com', u'2012-11-17 13:05:35.337209')
+(u'222', u'http://pixelpark.com', u'2012-11-17 13:05:36.639245')
+(u'333', u'http://google.com', u'2012-11-17 13:07:23.326241')
+(u'222', u'http://pixelpark.com', u'2012-11-17 13:07:30.849533')
+(u'333', u'http://google.com', u'2012-11-17 13:08:26.716460')
+(u'Hello Data', u'link', u'2012-11-17 13:09:47.829346')
+(u'222', u'http://pixelpark.com', u'2012-11-17 13:09:53.423165')
+(u'Hello Data', u'link', u'2012-11-17 13:21:28.252299')
+(u'222', u'http://ww.sqlite.org/', u'2012-11-17 13:22:46.257801')
+(u'Hello Data', u'link', u'2012-11-17 13:23:41.588091')
+127.0.0.1 - - [17/Nov/2012 13:23:41] "POST /messages HTTP/1.1" 200 -
+^C * Running on http://127.0.0.1:5000/
+ entry: 333
+ link: http://google.com
+ timestamp: 2012-11-17 13:19:35.387590
+
+{'entry': u'Hello Data', 'link': u'link', 'timestamp': '2012-11-17 13:24:11.822528'}
+Insert row succeeded.
+127.0.0.1 - - [17/Nov/2012 13:24:12] "POST /messages HTTP/1.1" 200 -
