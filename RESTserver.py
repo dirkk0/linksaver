@@ -2,7 +2,12 @@ from flask import Flask
 from flask import json
 from flask import request
 
-from db_google import writeEntry
+from db_sqlite import writeEntry
+
+# uncomment the next line for google spreadsheet support.
+# from db_google import writeEntry  #<---- this line
+# dont forget to create a credential.json file from
+# the credentials_template.json!
 
 app = Flask(__name__)
 

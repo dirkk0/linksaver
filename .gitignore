@@ -1,7 +1,7 @@
 credentials.json
 screenlog.*
 bak_*
-
+entries.db
 
 #python specific
 *.pyc
