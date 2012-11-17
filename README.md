@@ -1,5 +1,5 @@
 # linksaver
-a poor man's private delicious.
+A poor man's private delicious. You run a local webserver that listens on port 5000 to receive messages from your webbrowser to save them either to a local database or to a Google spreadsheet.
 
 
 ## Basic usage.
